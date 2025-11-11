@@ -205,5 +205,12 @@
 })();
 </script>
 <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.Telegram && Telegram.WebApp) {
+      Telegram.WebApp.ready();
+      Telegram.WebApp.enableClosingConfirmation();
+    }
+  });
+</script>
   </body>
 </html>
